@@ -1,0 +1,40 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "HaSQL Query Language",
+	"patterns": [
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"comment": {
+			"begin": "--",
+			"end": "\n",
+			"name": "comment.line.number-sign.hasql"
+		},
+		"strings": {
+			"name": "string.quoted.double.hasql",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.hasql",
+					"match": "\\\\."
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.hasql",
+				"match": "\\b(if|then|else|show|where)\\b"
+			}]
+		}
+	},
+	"scopeName": "source.cql"
+}

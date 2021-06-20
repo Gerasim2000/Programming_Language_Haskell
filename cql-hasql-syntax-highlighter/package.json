@@ -1,0 +1,25 @@
+{
+    "name": "cql",
+    "displayName": "CQL",
+    "description": "CQl for HaSQL",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hasql",
+            "aliases": ["HaSQL Query Language", "hasql"],
+            "extensions": [".cql"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hasql",
+            "scopeName": "source.cql",
+            "path": "./syntaxes/hasql.tmLanguage.json"
+        }]
+    }
+}

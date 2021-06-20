@@ -1,0 +1,5 @@
+show (p1,p2,p3,q1,q2,q3,r1,s1,t1,t2,t3,t4)
+where "P"(p1,p2,p3) & "Q"(q1,q2,q3)
+& "R"(r1)
+& "S"(s1)
+& "T"(t1,t2,t3,t4)
